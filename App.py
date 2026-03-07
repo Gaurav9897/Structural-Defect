@@ -5,7 +5,7 @@ import datetime as dt
 import os
 
 # Configure the model
-gemini_api_key = os.getenv('GOOGLE_API_KEY2')
+gemini_api_key = os.getenv('GEMINI_API_KEY')
 genai.configure(api_key=gemini_api_key)
 model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
@@ -115,4 +115,5 @@ if st.button('Submit'):
         file_name='structual_defect_report.txt',
         mime= 'text/plain'):
         st.success('Your File is Downloaded')
+
         
