@@ -3,9 +3,10 @@ import google.generativeai as genai
 from PIL import Image
 import datetime as dt
 import os
-
+import os
+print(os.getenv("GOOGLE_API_KEY"))
 # Configure the model
-gemini_api_key = os.getenv('GEMINI_API_KEY')
+gemini_api_key = os.getenv('GOOGLE_API_KEY')
 genai.configure(api_key=gemini_api_key)
 model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
@@ -117,3 +118,4 @@ if st.button('Submit'):
         st.success('Your File is Downloaded')
 
         
+
