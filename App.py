@@ -20,7 +20,8 @@ if uploaded_image:
     st.sidebar.image(uploaded_image)
 
 # Lets create the main page
-st.title(':orange[STRUCTUAL DEFECT:-] :green[AI Assisted Structural Defect Identifier]')
+st.title("AI Assisted Structural Defect Identifier")
+st.caption("Powered by Generative AI (Google Gemini) & Streamlit")
 st.markdown('#### :blue[This application takes images of the structual defects from the construction site and prepare the AI assisted report.]')
 title = st.text_input('Enter the Title of the report:')
 name = st.text_input('Enter the name of person who has prepared the report.')
@@ -116,10 +117,10 @@ if st.button('Submit'):
         file_name='structual_defect_report.txt',
         mime= 'text/plain'):
         st.success('Your File is Downloaded')
-st.title("AI Assisted Structural Defect Identifier")
-st.caption("Powered by Generative AI (Google Gemini) & Streamlit")
+
 
 
         
+
 
 
