@@ -116,6 +116,10 @@ if st.button('Submit'):
         file_name='structual_defect_report.txt',
         mime= 'text/plain'):
         st.success('Your File is Downloaded')
+st.title("AI Assisted Structural Defect Identifier")
+st.caption("Powered by Generative AI (Google Gemini) & Streamlit")
+
 
         
+
 
